@@ -1,0 +1,6 @@
+reduce()- returns single value(lowest,highest,average etc)
+
+filter()- it returns an arrray satisfying a specific condition
+array.fliter(variable=>condition)
+
+some() - it returns true or false based on the conditions applied to a given array 
