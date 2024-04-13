@@ -1,6 +1,19 @@
 reduce()- returns single value(lowest,highest,average etc)
 
-filter()- it returns an arrray satisfying a specific condition
+filter()- it returns an array satisfying a specific condition
 array.fliter(variable=>condition)
 
 some() - it returns true or false based on the conditions applied to a given array 
+
+find() - it return first element that satisfy the condition
+
+includes() - to check an item present in the array or not
+
+indexOf() - to find the index of a given element in the array
+
+splice() - to add and remove items at a particular index
+
+            array.splice(index,how many items tobe removed , items to be added)
+
+slice() - method used to extracty a section of an arrray and return a new array without modifying the orginal array
+          array.slice(startIndex,endIndex) endIndex is excluded
