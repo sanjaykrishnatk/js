@@ -10,3 +10,14 @@ console.log(mail.endsWith('@gmail.com')?`Valid Gmail ID`:`Invalid Gmail ID`);
 
 str='quotient'
 console.log(str.startsWith('q')?`Word starts with "q"`:`Word does not starts with "q"`);
+
+str='luminar'
+str1=str.slice(1,4)
+console.log(str1);
+
+str2=str.slice(-5)
+console.log(str2);
+
+str="Luminar technolab"
+str3=str.split("")
+console.log(str3);
