@@ -1,0 +1,11 @@
+body{
+    overflow-x: hidden;
+    background:url('./media/vote.jpg') ;
+    background-size: cover;
+}
+form{
+    background-color: white;
+}
+.row{
+    height: 730px;
+}

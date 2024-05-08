@@ -1,0 +1,42 @@
+pillars of oops
+---------------------
+1)inheritance -- mechanism used to access methods and properties from other classes
+    -parent class (super class/base class)
+    -child  class (dericed class/sub class)
+keyword - extends - classical inheritance
+object inheritancce - keyword - __proto__
+
+multilevel inheritance 
+2)polymorphism 
+    poly - many
+    morphism - forms
+
+    i) method / function overloading
+       - method with same name but diffrent arguements
+       -execute based on the number of arguements
+
+       --rest operator(...) - it returns arguements as array.
+   
+   
+    ii)method overriding
+
+    --method with same name and same number of arguements
+    --the last written method
+    --JavaScript support this concept
+
+3)encapsulation
+4)abstraction
+
+
+Exception handling
+--------------------------
+exception - runtime errors/an unexpected behavior (wrong or not) that occurs during software execution. This can interrupts the normal flow of execution and needs proper handling.
+try-catch block
+at a time one block works, either try or catch
+try{
+    statements that can cause error.
+}catch{
+    statements to handle error
+}finally{
+    statements that have to be executed in both case
+}

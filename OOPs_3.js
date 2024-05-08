@@ -16,11 +16,11 @@ class Bank{
     }
     validateAccount(acno){
         if(acno in this.accountDetails){
-            console.log(`Account Exists`);
+            return true;
         }
     }
     authenticateAccount(acno,uname,pwd){
-        if(acno in this.accountDetails){
+        if(this.validateAccount(acno)){
             // console.log(this.accountDetails[acno].username);
             // console.log(this.accountDetails[acno].username);
             if(uname==this.accountDetails[acno].username&&pwd==this.accountDetails[acno].password){
@@ -30,22 +30,25 @@ class Bank{
             }
         }  
     }
-    checkBalance(acno){
-        if(acno in this.accountDetails){
+    checkBalance(acno,pwd){
+        if(this.validateAccount(acno)&&pwd==this.accountDetails[acno].password){
             console.log(`Account Balance of ${acno} : ${this.accountDetails[acno].balance}`);
         }  
     }
-    fundTransfer(debAcno,creAcno,amt){
-        if(debAcno in this.accountDetails && creAcno in this.accountDetails){
+
+     
+    fundTransfer(debAcno,creAcno,amt,pwd){
+        if(this.validateAccount(debAcno) && this.validateAccount(creAcno)){
             if(this.accountDetails[debAcno].balance>=amt){
                 console.log('Account balance before transfer');
-                this.checkBalance(debAcno)
-                this.checkBalance(creAcno)
+                this.checkBalance(debAcno,pwd)
+                console.log(`Account Balance of ${creAcno} : ${this.accountDetails[creAcno].balance}`);
                 this.accountDetails[debAcno].balance-=amt
                 this.accountDetails[creAcno].balance+=amt
                 console.log('Account balance after transfer');
-                this.checkBalance(debAcno)
-                this.checkBalance(creAcno)
+                this.checkBalance(debAcno,pwd)
+                console.log(`Account Balance of ${creAcno} : ${this.accountDetails[creAcno].balance}`);
+
 
             }else{
                 console.log('Insufficient Balance');
@@ -61,7 +64,7 @@ class Bank{
 console.log('validate a given account number');
 console.log('-----------------------------------------');
    obj=new Bank();
-   obj.validateAccount(1000)
+   obj.validateAccount(1000)?console.log('Account Exists'):console.log('Account does not exists');
    console.log('-----------------------------------------');
    console.log('Authenticate the account');
    console.log('-----------------------------------------');
@@ -69,12 +72,12 @@ console.log('-----------------------------------------');
    console.log('-----------------------------------------');
    console.log('check balance');
    console.log('-----------------------------------------');
-   obj.checkBalance(1000)
+   obj.checkBalance(1000,'userone')
    console.log('-----------------------------------------');
    console.log('fund transfer');
    console.log('-----------------------------------------');
 
-   obj.fundTransfer(1000,1001,5000)
+   obj.fundTransfer(1000,1001,5000,'userone')
 
 //authenticate the account
 

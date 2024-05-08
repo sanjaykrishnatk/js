@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript in frontend</h1>
+    <h1 id="dom">Document object model</h1>
+    <p class="grp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente sunt fuga mollitia repellat impedit minima, incidunt, debitis pariatur laudantium libero dolore cumque explicabo voluptates nisi maxime cupiditate necessitatibus nesciunt.</p>
+    <button onclick="change()">click</button>
+    <h1 class="grp1" id="dom-short">Dom Model</h1>
+    <script>
+    //    let content= document.getElementsByTagName('h1');
+    //    console.log(content[1]);
+    // let content= document.getElementById("dom")
+    // console.log(content);
+    // let content=document.getElementsByClassName('grp1')
+    // console.log(content);
+    // let content=document.querySelector(".grp1");
+    // console.log(content);
+    // document.getElementById('dom-short').innerHTML="Document Object Model"
+//    content= document.getElementsByClassName('grp1');
+//    content[1].innerHTML="Document Object Model"
+let dom=document.getElementById('dom-short');
+let change=()=>{
+        dom.innerHTML="Document Object Model"
+        dom.style.color='blue'
+        dom.style.fontSize='75px'
+}
+    </script>
+</body>
+</html>

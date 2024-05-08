@@ -1,0 +1,61 @@
+Browser - application programs which provides an interface for user to interact with all information available in www.
+
+browser understands - html, css, JavaScript
+JavaScript access DOM
+
+DOM - Document object model
+----------------------------------
+-created by browser
+-its a tree structure of the html Document
+
+BOM
+------------------------------------
+Browser object model
+
+how to use js file
+--------------------------------
+1)internal
+    <script>
+        logic
+    </script>
+    --after body tag
+2)external
+create external file with extension of js
+-<script src="path">
+
+How to access html tags
+---------------------------
+-1)document.getElementByTagName('tagname) - returns htmlcollection (array)
+
+-2)document.getElementById('id')
+
+-3)document.getElementByClassName('classname) -  returns htmlcollection (array)
+
+-4)document.querySelector(tag/#id/.classname) - it returns first satisfying tag
+
+-5)document.querySelectorAll - returns  Nodelist(array) of items satisfying the specific conditions
+
+
+-how to change the content in a tag
+------------------------------------------
+-innerHTML
+
+
+-textContent
+
+
+
+-EVENTS- Actions that can laed to an update in DOM
+---------------------------------------------------
+1)click
+2)change
+3)submit
+4)load
+5)key down
+
+
+
+DATE
+-------------
+
+Access date of the system
