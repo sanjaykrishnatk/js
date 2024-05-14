@@ -55,7 +55,115 @@ How to access html tags
 
 
 
+JSON.stringify() - convert object to string
+JSON.parse - to convert string into object
+---------------------------------------------
+
+
+
+
 DATE
 -------------
 
 Access date of the system
+
+Database
+----------------------
+
+- used to store Database
+- stores data as key:value pair
+- both key and value should be string
+- large amount of data can be stored
+
+
+browser storage : to store data
+- limited amount of data can be stored.
+----------------------------------
+
+-1) localstorage
+- data will be stored permanently.
+
+operations in localstorage
+---------------------------------
+1) localstorage.setItem("key","value") - to add data to local storage
+2) localstorage.getItem("key") - to retrieve the data from localstorage.
+3) localstorage.removeItem("key") - to delete a data from localstorage.
+
+-2) session storage
+- not a permanent storage
+- removed when session is expired.
+
+
+
+API - Application programming interface
+--------------------------------------------
+-use to communicate between two application available in internet
+
+types of API
+-----------------
+1) public API - globally available
+2) private API - inside a company
+3) partner API - commonly shared between one or more partners
+4) composite API - interconnected networks of all these.
+
+
+http - HyperText transfer protocol
+--------------------------------------
+https, ftp, smtp, tcp, update
+
+http methods
+-------------------
+1) get method- to retireve data
+2) post method- to store data
+3) put method- to update the data
+4) delete method-  to remove data
+
+request have two part
+-------------------------
+1) header - contains the content-type and authentication keys etc.
+2) body - holds the data and the contents to be shared
+
+JSON formats - JavaScript object notation
+--------------------------------------------
+- common format for data sharing
+
+syntax
+---------
+{
+    "key":"value"
+}
+
+rules
+------
+- data should be shared as key value pairs 
+- both key and value should be string
+- each key value pairs should be separated by commas and enclosed within curly brackets.
+- if the shared data is array then the enclosed in square bracket.
+
+
+respone status
+------------------
+1) 1xx series - information 
+2) 2xx series - success
+3) 3xx series - redirection
+4) 4xx series - client side error
+5) 5xx series - server side error
+
+URL - UNIFORM RESOURCE LOCATOR
+--------------------------------
+- it is the resource address in internet.
+
+RESTFUL API - representational state transfer 
+-----------------------------------------------
+- it is a software architecture style that was created to guide the design and development of the web.
+
+
+refer
+------
+SOAP, RPC
+
+
+API testing tool
+-------------------------
+- THUNDERCLIENT - VSCODE extension
+- POSTMAN - real tool for testing API
